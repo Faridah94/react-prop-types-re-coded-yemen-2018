@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
- 
+
 class Order extends React.Component {
   render() {
     return (
@@ -16,7 +16,10 @@ class Order extends React.Component {
   }
 }
 
-
+Order.defaultProps = {
+  cone: true,
+  size: 'regular'
+};
 
 Order.propTypes = {
   cone: PropTypes.bool,
